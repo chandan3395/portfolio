@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07110c">
+<meta name="description" content="Chandan G — Computer Science Engineering student focused on full-stack development and AI/ML.">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+  <title>Projects | Chandan G</title>
+</head>
+<body data-page="projects">
+  <div class="page-noise" aria-hidden="true"></div>
+  
+<header class="site-header" id="top">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Chandan G home">CG<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a data-page="home" href="index.html">Home</a>
+      <a data-page="projects" href="projects.html">Projects</a>
+      <a data-page="resume" href="resume.html">Resume</a>
+      <a href="#contact" class="contact-nav">Contact</a>
+      <a href="https://github.com/Chandan2006" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme"><span class="theme-icon">◐</span></button>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation">Menu</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a data-page="home" href="index.html">Home</a>
+    <a data-page="projects" href="projects.html">Projects</a>
+    <a data-page="resume" href="resume.html">Resume</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/Chandan2006" target="_blank" rel="noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/chandan2006" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+  </div>
+</header>
+
+  <main class="inner-page">
+    <section class="page-hero shell reveal"><div class="section-label">01 / PROJECTS</div><h1>Work built to<br><span>solve real problems.</span></h1><p>Selected projects from my full-stack and backend work. The descriptions below stay close to the implementation details documented in my resume.</p></section>
+
+    <section class="section shell project-detail-section" id="fitos">
+      <article class="project-detail reveal">
+        <div class="detail-index">01</div><div class="detail-main"><div class="detail-kicker">FITOS · FITNESS COACHING SAAS</div><h2>FITOS</h2><p class="detail-lede">A full-stack fitness coaching SaaS platform designed around structured trainer-client workflows and secure multi-role access.</p>
+          <div class="detail-columns"><div><h3>What I built</h3><p>Architected a 3-role RBAC system for Admin, Trainer and Client across 30+ pages, 13 Mongoose schemas and 15 service modules using a layered routes → controllers → services architecture.</p><p>Implemented trainer-client workflows for plans, check-ins, progress tracking and onboarding.</p><p>Built JWT access/refresh authentication with HttpOnly cookies and Google OAuth 2.0 through Passport.js.</p></div><div><h3>Engineering details</h3><p>Optimized media handling with signed direct-to-Cloudinary browser uploads and integrated the Meta WhatsApp Cloud API for client activation.</p><p>Added 15 Jest validator/service/contract test suites and deployed with Render + Vercel.</p><div class="chips"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Cloudinary</span><span>WhatsApp Cloud API</span></div></div></div>
+        </div></article>
+      <div class="source-note reveal">Repository/live URLs were not present as direct URLs in the supplied resume, and the checked GitHub profile currently exposes no public repositories. The portfolio therefore links to the GitHub profile rather than inventing repository addresses.</div>
+    </section>
+
+    <section class="section shell project-detail-section" id="rate-my-bond">
+      <article class="project-detail alt reveal"><div class="detail-index">02</div><div class="detail-main"><div class="detail-kicker">FINTECH · BOND RISK ANALYSIS</div><h2>Rate My Bond</h2><p class="detail-lede">A full-stack bond risk-analysis platform for Indian retail investors, centered around transparent credit and return calculations.</p><div class="detail-columns"><div><h3>Analysis engine</h3><p>Implemented a custom credit-scoring engine covering Probability of Default (PD), Loss Given Default (LGD), Expected Loss and risk-adjusted return.</p><p>Designed a config-driven issuer-strength model across seven financial metrics: ICR, leverage, cashflow quality, refinancing risk, sector, group support and event risk.</p></div><div><h3>Platform engineering</h3><p>Built a production REST API with validation, rate limiting, CORS and centralized error handling.</p><p>Implemented Firebase-authenticated protected routes and MongoDB issuer/analysis data pipelines with CSV ingestion.</p><div class="chips"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Firebase Auth</span></div></div></div></div></article>
+    </section>
+
+    <section class="section shell project-detail-section" id="notes-api">
+      <article class="project-detail reveal"><div class="detail-index">03</div><div class="detail-main"><div class="detail-kicker">BACKEND · SECURE REST API</div><h2>Notes API</h2><p class="detail-lede">A secure REST backend built around authentication, authorization, caching and reliable note retrieval.</p><div class="detail-columns"><div><h3>Security</h3><p>Implemented JWT authentication with refresh-token rotation, bcrypt password hashing and one-time password-reset tokens through Nodemailer.</p><p>Enforced RBAC and resource-ownership authorization for protected resources.</p></div><div><h3>Performance & hardening</h3><p>Added Redis cache-aside caching with TTL and write-time invalidation, plus cursor-based pagination and search for note retrieval.</p><p>Hardened the API with Helmet, rate limiting, centralized error handling, structured logging and Cloudinary-backed avatar uploads through Multer.</p><div class="chips"><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Redis</span><span>JWT</span></div></div></div></div></article>
+    </section>
+
+    <section class="section shell" id="contact">
+      <div class="contact-card compact reveal"><div><div class="section-label">04 / LINKS</div><h2>Explore my profile.</h2><p>Direct project repository URLs were not supplied, so these links stay at the verified profile level.</p></div><div class="contact-actions"><a class="btn btn-primary" href="https://github.com/Chandan2006" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn btn-ghost" href="https://www.linkedin.com/in/chandan2006" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
+    </section>
+  </main>
+  
+<footer class="site-footer">
+  <div>CHANDAN G</div>
+  <div>Computer Science Engineering · Full-Stack Development · AI/ML</div>
+  <div>© <span data-year></span></div>
+</footer>
+
+</body>
+</html>
